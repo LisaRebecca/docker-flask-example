@@ -10,6 +10,8 @@ services:
     links:
       - db
     restart: always
+    environment: 
+      - VERSION=1
   db:
     image: mongo:latest
     hostname: test_mongodb
